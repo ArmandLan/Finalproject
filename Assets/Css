@@ -1,0 +1,439 @@
+/**
+ * SoleMate - Autumn Theme
+ * Warm autumn/fall color scheme
+ */
+
+/* Autumn Theme Variables */
+.autumn-theme,
+[data-theme="autumn"] {
+    /* Warm Autumn Colors */
+    --primary-color: #d97706;      /* Amber/Gold */
+    --primary-dark: #b45309;        /* Darker Amber */
+    --secondary-color: #78350f;     /* Dark Brown */
+    --accent-color: #ea580c;        /* Orange */
+    
+    /* Backgrounds */
+    --bg-color: #fffbeb;            /* Warm cream */
+    --bg-light: #fef3c7;            /* Light cream */
+    --bg-dark: #fde68a;             /* Deeper cream */
+    
+    /* Text Colors */
+    --text-color: #451a03;          /* Dark brown */
+    --text-light: #78350f;          /* Medium brown */
+    --text-dark: #271105;           /* Very dark brown */
+    
+    /* Borders */
+    --border-color: #fed7aa;        /* Soft orange-brown */
+    --border-light: #ffedd5;        /* Light border */
+    
+    /* Cards */
+    --card-bg: #ffffff;
+    --card-hover: #fffbeb;
+    
+    /* Status Colors (autumn adjusted) */
+    --success: #059669;             /* Forest green */
+    --warning: #d97706;             /* Amber */
+    --error: #dc2626;               /* Red */
+    --info: #0284c7;                /* Sky blue */
+    
+    /* Shadows */
+    --shadow: 0 1px 3px rgba(120, 53, 15, 0.1);
+    --shadow-lg: 0 10px 25px -5px rgba(120, 53, 15, 0.15);
+}
+
+/* Apply Autumn Theme */
+.autumn-theme body,
+[data-theme="autumn"] body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* Header */
+.autumn-theme .main-header,
+[data-theme="autumn"] .main-header {
+    background: var(--bg-light);
+    border-bottom: 2px solid var(--border-color);
+}
+
+.autumn-theme .top-bar,
+[data-theme="autumn"] .top-bar {
+    background: var(--secondary-color);
+    color: var(--bg-light);
+}
+
+.autumn-theme .top-bar a,
+[data-theme="autumn"] .top-bar a {
+    color: var(--bg-light);
+}
+
+/* Hero Section - Autumn Gradient */
+.autumn-theme .hero,
+[data-theme="autumn"] .hero {
+    background: linear-gradient(135deg, #78350f 0%, #d97706 50%, #ea580c 100%);
+}
+
+.autumn-theme .hero-overlay,
+[data-theme="autumn"] .hero-overlay {
+    background: url('https://images.unsplash.com/photo-1470246973918-29a93221c455?w=1920') center/cover no-repeat;
+    opacity: 0.15;
+}
+
+/* Navigation */
+.autumn-theme .main-nav a,
+[data-theme="autumn"] .main-nav a {
+    color: var(--text-color);
+}
+
+.autumn-theme .main-nav a:hover,
+[data-theme="autumn"] .main-nav a:hover {
+    color: var(--primary-color);
+}
+
+/* Header Icons */
+.autumn-theme .header-icons a,
+[data-theme="autumn"] .header-icons a {
+    color: var(--text-color);
+}
+
+.autumn-theme .badge,
+[data-theme="autumn"] .badge {
+    background: var(--primary-color);
+}
+
+/* Mobile Menu */
+.autumn-theme .mobile-menu,
+[data-theme="autumn"] .mobile-menu {
+    background: var(--bg-light);
+    border-top: 1px solid var(--border-color);
+}
+
+/* Buttons */
+.autumn-theme .btn-primary,
+[data-theme="autumn"] .btn-primary {
+    background: var(--primary-color);
+    color: white;
+}
+
+.autumn-theme .btn-primary:hover,
+[data-theme="autumn"] .btn-primary:hover {
+    background: var(--primary-dark);
+}
+
+.autumn-theme .btn-outline,
+[data-theme="autumn"] .btn-outline {
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.autumn-theme .btn-outline:hover,
+[data-theme="autumn"] .btn-outline:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* Product Cards */
+.autumn-theme .product-card,
+[data-theme="autumn"] .product-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+}
+
+.autumn-theme .product-card:hover,
+[data-theme="autumn"] .product-card:hover {
+    border-color: var(--primary-color);
+    box-shadow: var(--shadow-lg);
+}
+
+.autumn-theme .product-badge.sale-badge,
+[data-theme="autumn"] .product-badge.sale-badge {
+    background: var(--accent-color);
+}
+
+.autumn-theme .product-badge.featured-badge,
+[data-theme="autumn"] .product-badge.featured-badge {
+    background: var(--primary-color);
+}
+
+.autumn-theme .product-price,
+[data-theme="autumn"] .product-price {
+    color: var(--primary-color);
+}
+
+.autumn-theme .sale-price,
+[data-theme="autumn"] .sale-price {
+    color: var(--accent-color);
+}
+
+.autumn-theme .btn-add-to-cart,
+[data-theme="autumn"] .btn-add-to-cart {
+    background: var(--primary-color);
+}
+
+.autumn-theme .btn-add-to-cart:hover,
+[data-theme="autumn"] .btn-add-to-cart:hover {
+    background: var(--primary-dark);
+}
+
+/* Categories Section */
+.autumn-theme .categories-section,
+[data-theme="autumn"] .categories-section {
+    background: var(--bg-light);
+}
+
+.autumn-theme .category-card,
+[data-theme="autumn"] .category-card {
+    border-radius: 16px;
+}
+
+.autumn-theme .category-overlay,
+[data-theme="autumn"] .category-overlay {
+    background: linear-gradient(transparent, rgba(120, 53, 15, 0.9));
+}
+
+/* Features Section */
+.autumn-theme .features-section,
+[data-theme="autumn"] .features-section {
+    background: white;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.autumn-theme .feature-icon,
+[data-theme="autumn"] .feature-icon {
+    background: #fef3c7;
+}
+
+.autumn-theme .feature-icon i,
+[data-theme="autumn"] .feature-icon i {
+    color: var(--primary-color);
+}
+
+/* Sale Section */
+.autumn-theme .sale-section,
+[data-theme="autumn"] .sale-section {
+    background: linear-gradient(135deg, #fffbeb 0%, #ffffff 100%);
+}
+
+.autumn-theme .sale-card,
+[data-theme="autumn"] .sale-card {
+    border: 2px solid var(--border-color);
+}
+
+/* Testimonials */
+.autumn-theme .testimonials-section,
+[data-theme="autumn"] .testimonials-section {
+    background: var(--bg-light);
+}
+
+.autumn-theme .testimonial-card,
+[data-theme="autumn"] .testimonial-card {
+    background: white;
+    border-radius: 16px;
+}
+
+.autumn-theme .testimonial-stars,
+[data-theme="autumn"] .testimonial-stars {
+    color: var(--primary-color);
+}
+
+/* Newsletter Section */
+.autumn-theme .newsletter-section,
+[data-theme="autumn"] .newsletter-section {
+    background: var(--secondary-color);
+}
+
+.autumn-theme .newsletter-form button,
+[data-theme="autumn"] .newsletter-form button {
+    background: var(--primary-color);
+}
+
+.autumn-theme .newsletter-form button:hover,
+[data-theme="autumn"] .newsletter-form button:hover {
+    background: var(--primary-dark);
+}
+
+/* Footer */
+.autumn-theme .main-footer,
+[data-theme="autumn"] .main-footer {
+    background: #451a03;
+    color: #fed7aa;
+}
+
+.autumn-theme .footer-section h4::after,
+[data-theme="autumn"] .footer-section h4::after {
+    background: var(--primary-color);
+}
+
+.autumn-theme .footer-section a,
+[data-theme="autumn"] .footer-section a {
+    color: #fed7aa;
+}
+
+.autumn-theme .footer-section a:hover,
+[data-theme="autumn"] .footer-section a:hover {
+    color: var(--primary-color);
+}
+
+.autumn-theme .social-links a,
+[data-theme="autumn"] .social-links a {
+    background: #78350f;
+    color: #fed7aa;
+}
+
+.autumn-theme .social-links a:hover,
+[data-theme="autumn"] .social-links a:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+.autumn-theme .contact-info-list li i,
+[data-theme="autumn"] .contact-info-list li i {
+    color: var(--primary-color);
+}
+
+/* Forms */
+.autumn-theme input,
+.autumn-theme select,
+.autumn-theme textarea,
+[data-theme="autumn"] input,
+[data-theme="autumn"] select,
+[data-theme="autumn"] textarea {
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+}
+
+.autumn-theme input:focus,
+.autumn-theme select:focus,
+.autumn-theme textarea:focus,
+[data-theme="autumn"] input:focus,
+[data-theme="autumn"] select:focus,
+[data-theme="autumn"] textarea:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(217, 119, 6, 0.1);
+}
+
+/* Admin Sidebar */
+.autumn-theme .admin-sidebar,
+[data-theme="autumn"] .admin-sidebar {
+    background: var(--secondary-color);
+}
+
+.autumn-theme .admin-nav a,
+[data-theme="autumn"] .admin-nav a {
+    color: var(--bg-light);
+}
+
+.autumn-theme .admin-nav a:hover,
+.autumn-theme .admin-nav a.active,
+[data-theme="autumn"] .admin-nav a:hover,
+[data-theme="autumn"] .admin-nav a.active {
+    background: var(--primary-color);
+}
+
+/* Admin Cards */
+.autumn-theme .stat-card,
+.autumn-theme .admin-card,
+[data-theme="autumn"] .stat-card,
+[data-theme="autumn"] .admin-card {
+    background: white;
+    border-radius: 16px;
+}
+
+.autumn-theme .stat-icon,
+[data-theme="autumn"] .stat-icon {
+    background: #fef3c7;
+}
+
+.autumn-theme .stat-icon i,
+[data-theme="autumn"] .stat-icon i {
+    color: var(--primary-color);
+}
+
+/* Pagination */
+.autumn-theme .pagination a,
+[data-theme="autumn"] .pagination a {
+    border-color: var(--border-color);
+    color: var(--text-color);
+}
+
+.autumn-theme .pagination a.active,
+[data-theme="autumn"] .pagination a.active {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* Breadcrumb */
+.autumn-theme .breadcrumb a:hover,
+[data-theme="autumn"] .breadcrumb a:hover {
+    color: var(--primary-color);
+}
+
+/* Back to Top */
+.autumn-theme .back-to-top,
+[data-theme="autumn"] .back-to-top {
+    background: var(--primary-color);
+}
+
+.autumn-theme .back-to-top:hover,
+[data-theme="autumn"] .back-to-top:hover {
+    background: var(--primary-dark);
+}
+
+/* Filter Section */
+.autumn-theme .filter-section a:hover,
+.autumn-theme .filter-section a.active,
+[data-theme="autumn"] .filter-section a:hover,
+[data-theme="autumn"] .filter-section a.active {
+    color: var(--primary-color);
+}
+
+/* Size Buttons */
+.autumn-theme .size-btn.selected,
+[data-theme="autumn"] .size-btn.selected {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* Wishlist Button */
+.autumn-theme .btn-wishlist:hover,
+[data-theme="autumn"] .btn-wishlist:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+/* Quantity Controls */
+.autumn-theme .quantity-control button:hover,
+[data-theme="autumn"] .quantity-control button:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+/* Custom Scrollbar for Autumn Theme */
+.autumn-theme ::-webkit-scrollbar-thumb,
+[data-theme="autumn"] ::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 10px;
+}
+
+.autumn-theme ::-webkit-scrollbar-thumb:hover,
+[data-theme="autumn"] ::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-dark);
+}
+
+/* Selection Color */
+.autumn-theme ::selection,
+[data-theme="autumn"] ::selection {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* Links */
+.autumn-theme a,
+[data-theme="autumn"] a {
+    color: var(--primary-color);
+}
+
+.autumn-theme a:hover,
+[data-theme="autumn"] a:hover {
+    color: var(--primary-dark);
+}
