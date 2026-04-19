@@ -1,0 +1,363 @@
+/**
+ * SoleMate - Dark Theme
+ * Dark mode color scheme
+ */
+
+/* Dark Theme Variables */
+.dark-theme,
+[data-theme="dark"] {
+    /* Colors */
+    --primary-color: #60a5fa;
+    --primary-dark: #3b82f6;
+    --secondary-color: #1e293b;
+    --accent-color: #f97316;
+    
+    /* Backgrounds */
+    --bg-color: #0f172a;
+    --bg-light: #1e293b;
+    --bg-dark: #020617;
+    
+    /* Text Colors */
+    --text-color: #e2e8f0;
+    --text-light: #94a3b8;
+    --text-dark: #cbd5e1;
+    
+    /* Borders */
+    --border-color: #334155;
+    --border-light: #1e293b;
+    
+    /* Cards */
+    --card-bg: #1e293b;
+    --card-hover: #334155;
+    
+    /* Status Colors */
+    --success: #22c55e;
+    --warning: #f59e0b;
+    --error: #ef4444;
+    --info: #3b82f6;
+    
+    /* Shadows */
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    --shadow-lg: 0 10px 25px -5px rgba(0, 0, 0, 0.4);
+}
+
+/* Apply Dark Theme */
+.dark-theme body,
+[data-theme="dark"] body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* Header */
+.dark-theme .main-header,
+[data-theme="dark"] .main-header {
+    background: var(--bg-light);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.dark-theme .top-bar,
+[data-theme="dark"] .top-bar {
+    background: var(--bg-dark);
+}
+
+/* Navigation */
+.dark-theme .main-nav a,
+[data-theme="dark"] .main-nav a {
+    color: var(--text-color);
+}
+
+.dark-theme .main-nav a:hover,
+[data-theme="dark"] .main-nav a:hover {
+    color: var(--primary-color);
+}
+
+/* Header Icons */
+.dark-theme .header-icons a,
+[data-theme="dark"] .header-icons a {
+    color: var(--text-color);
+}
+
+/* Mobile Menu */
+.dark-theme .mobile-menu,
+[data-theme="dark"] .mobile-menu {
+    background: var(--bg-light);
+    border-top: 1px solid var(--border-color);
+}
+
+.dark-theme .mobile-menu a,
+[data-theme="dark"] .mobile-menu a {
+    color: var(--text-color);
+}
+
+/* Product Cards */
+.dark-theme .product-card,
+[data-theme="dark"] .product-card {
+    background: var(--card-bg);
+    box-shadow: var(--shadow);
+}
+
+.dark-theme .product-card:hover,
+[data-theme="dark"] .product-card:hover {
+    box-shadow: var(--shadow-lg);
+}
+
+.dark-theme .product-title,
+[data-theme="dark"] .product-title {
+    color: var(--text-color);
+}
+
+.dark-theme .product-category,
+[data-theme="dark"] .product-category {
+    color: var(--primary-color);
+}
+
+/* Buttons */
+.dark-theme .btn-primary,
+[data-theme="dark"] .btn-primary {
+    background: var(--primary-color);
+    color: white;
+}
+
+.dark-theme .btn-outline,
+[data-theme="dark"] .btn-outline {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.dark-theme .btn-add-to-cart,
+[data-theme="dark"] .btn-add-to-cart {
+    background: var(--primary-color);
+}
+
+/* Categories Section */
+.dark-theme .categories-section,
+[data-theme="dark"] .categories-section {
+    background: var(--bg-dark);
+}
+
+/* Features Section */
+.dark-theme .features-section,
+[data-theme="dark"] .features-section {
+    background: var(--bg-light);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.dark-theme .feature-icon,
+[data-theme="dark"] .feature-icon {
+    background: rgba(96, 165, 250, 0.1);
+}
+
+/* Testimonials */
+.dark-theme .testimonials-section,
+[data-theme="dark"] .testimonials-section {
+    background: var(--bg-color);
+}
+
+.dark-theme .testimonial-card,
+[data-theme="dark"] .testimonial-card {
+    background: var(--card-bg);
+}
+
+.dark-theme .testimonial-card p,
+[data-theme="dark"] .testimonial-card p {
+    color: var(--text-light);
+}
+
+/* Newsletter Section */
+.dark-theme .newsletter-section,
+[data-theme="dark"] .newsletter-section {
+    background: var(--bg-dark);
+}
+
+/* Footer */
+.dark-theme .main-footer,
+[data-theme="dark"] .main-footer {
+    background: var(--bg-dark);
+    border-top: 1px solid var(--border-color);
+}
+
+.dark-theme .footer-section a,
+[data-theme="dark"] .footer-section a {
+    color: var(--text-light);
+}
+
+.dark-theme .footer-section a:hover,
+[data-theme="dark"] .footer-section a:hover {
+    color: var(--primary-color);
+}
+
+/* Forms */
+.dark-theme input,
+.dark-theme select,
+.dark-theme textarea,
+[data-theme="dark"] input,
+[data-theme="dark"] select,
+[data-theme="dark"] textarea {
+    background: var(--bg-light);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+}
+
+.dark-theme input:focus,
+.dark-theme select:focus,
+.dark-theme textarea:focus,
+[data-theme="dark"] input:focus,
+[data-theme="dark"] select:focus,
+[data-theme="dark"] textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+/* Tables */
+.dark-theme .cart-table th,
+.dark-theme .cart-table td,
+[data-theme="dark"] .cart-table th,
+[data-theme="dark"] .cart-table td {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.dark-theme .admin-table th,
+.dark-theme .admin-table td,
+[data-theme="dark"] .admin-table th,
+[data-theme="dark"] .admin-table td {
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* Admin Sidebar */
+.dark-theme .admin-sidebar,
+[data-theme="dark"] .admin-sidebar {
+    background: var(--bg-dark);
+}
+
+.dark-theme .admin-nav a,
+[data-theme="dark"] .admin-nav a {
+    color: var(--text-light);
+}
+
+.dark-theme .admin-nav a:hover,
+.dark-theme .admin-nav a.active,
+[data-theme="dark"] .admin-nav a:hover,
+[data-theme="dark"] .admin-nav a.active {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* Admin Cards */
+.dark-theme .stat-card,
+.dark-theme .admin-card,
+[data-theme="dark"] .stat-card,
+[data-theme="dark"] .admin-card {
+    background: var(--card-bg);
+}
+
+/* Modal */
+.dark-theme .modal-content,
+[data-theme="dark"] .modal-content {
+    background: var(--card-bg);
+}
+
+/* Pagination */
+.dark-theme .pagination a,
+[data-theme="dark"] .pagination a {
+    border-color: var(--border-color);
+    color: var(--text-light);
+}
+
+.dark-theme .pagination a.active,
+[data-theme="dark"] .pagination a.active {
+    background: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+/* Breadcrumb */
+.dark-theme .breadcrumb,
+[data-theme="dark"] .breadcrumb {
+    color: var(--text-light);
+}
+
+.dark-theme .breadcrumb a,
+[data-theme="dark"] .breadcrumb a {
+    color: var(--text-light);
+}
+
+.dark-theme .breadcrumb a:hover,
+[data-theme="dark"] .breadcrumb a:hover {
+    color: var(--primary-color);
+}
+
+/* Filter Section */
+.dark-theme .filter-section h3,
+[data-theme="dark"] .filter-section h3 {
+    border-bottom-color: var(--border-color);
+}
+
+.dark-theme .filter-section a,
+[data-theme="dark"] .filter-section a {
+    color: var(--text-light);
+}
+
+.dark-theme .filter-section a:hover,
+.dark-theme .filter-section a.active,
+[data-theme="dark"] .filter-section a:hover,
+[data-theme="dark"] .filter-section a.active {
+    color: var(--primary-color);
+}
+
+/* Price Filter Inputs */
+.dark-theme .price-filters input,
+[data-theme="dark"] .price-filters input {
+    background: var(--bg-light);
+    border-color: var(--border-color);
+    color: var(--text-color);
+}
+
+/* Back to Top */
+.dark-theme .back-to-top,
+[data-theme="dark"] .back-to-top {
+    background: var(--primary-color);
+}
+
+/* Scrollbar */
+.dark-theme ::-webkit-scrollbar,
+[data-theme="dark"] ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.dark-theme ::-webkit-scrollbar-track,
+[data-theme="dark"] ::-webkit-scrollbar-track {
+    background: var(--bg-dark);
+}
+
+.dark-theme ::-webkit-scrollbar-thumb,
+[data-theme="dark"] ::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 5px;
+}
+
+.dark-theme ::-webkit-scrollbar-thumb:hover,
+[data-theme="dark"] ::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-color);
+}
+
+/* Selection Color */
+.dark-theme ::selection,
+[data-theme="dark"] ::selection {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* Placeholder Text */
+.dark-theme ::placeholder,
+[data-theme="dark"] ::placeholder {
+    color: var(--text-light);
+    opacity: 0.6;
+}
+
+/* Loading Spinner */
+.dark-theme .spinner,
+[data-theme="dark"] .spinner {
+    border-color: var(--border-color);
+    border-top-color: var(--primary-color);
+}
