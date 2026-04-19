@@ -1,0 +1,74 @@
+# SoleMate Admin Guide
+
+## Admin Access
+Login at `/admin` with admin credentials
+
+## Dashboard Overview
+- Total products, orders, users, revenue
+- Recent orders
+- Low stock alerts
+
+## Managing Products
+
+### Add Product
+1. Go to Products > Add New
+2. Fill product details:
+   - Name, SKU, Description
+   - Price, Sale Price
+   - Category, Brand
+   - Images (main + gallery)
+3. Set sizes and inventory
+4. Click Save
+
+### Edit Product
+1. Go to Products > List
+2. Click edit icon
+3. Modify details
+4. Save changes
+
+### Bulk Operations
+- Use checkboxes to select multiple products
+- Bulk delete, update status, change category
+
+## Order Management
+1. Orders > List
+2. View order details
+3. Update status:
+   - Pending → Processing → Shipped → Delivered
+   - Or Cancelled / Returned
+4. Add tracking number
+
+## User Management
+1. Users > List
+2. View all registered users
+3. Disable suspicious accounts
+4. Reset passwords if needed
+
+## Site Customization
+
+### Template Switcher
+1. Templates > Settings
+2. Choose theme:
+   - Light (default)
+   - Dark
+   - Autumn
+3. Custom colors:
+   - Primary color
+   - Secondary color
+   - Accent color
+
+### Site Content
+- Edit site name, tagline
+- Update contact information
+- Modify footer text
+
+## System Monitoring
+1. Monitor > Status
+2. Check:
+   - Database connection
+   - API endpoints
+   - File upload permissions
+   - Server load
+
+## Support
+For issues, contact developer or check system logs.
